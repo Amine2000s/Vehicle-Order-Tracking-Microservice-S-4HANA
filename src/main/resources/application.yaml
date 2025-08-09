@@ -1,0 +1,14 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          s4hana:
+            client-id:
+            client-secret:
+            authorization-grant-type:
+            scope: openid
+            provider: s4hana-provider
+        provider:
+          s4hana-provider:
+            token-uri: # https://XSUAAurl/oauth/token
